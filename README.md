@@ -41,3 +41,13 @@ S2 → High
 
 Pump is ON except in FULL state.
 
+### How to work with the files SmartWaterLevelController.v and tb_SmartWaterLevelController.v
+1. Download verilog module as well as gtkwave module from the browser
+2. Add these files into the bin folder of the verilog folder
+3. Enter these commands in the command prompt
+   cd \
+   cd iverilog
+   cd bin
+   iverilog -o test SmartWaterLevelController.v tb_SmartWaterLevelController.v
+   vvp test // to get the vvp output(similar to the truth table)
+   gtkwave SmartWaterLevel.vcd //gets the gtkwave output
